@@ -15,8 +15,8 @@ unchecked item.
 - [x] Valuation memo (print-ready one-pager per company)
 - [x] GitHub Actions: CI (tests + parity) and weekday data refresh
 - [x] README
-- [ ] Publish: create the GitHub repo, push, enable Pages from `/docs` (needs owner approval)
-- [ ] After the first deploy: confirm the scheduled refresh runs green for a week
+- [x] Published 2026-11-11: https://nnd1106.github.io/valuation-deal-lab/ (refresh workflow run once by hand, green)
+- [ ] Confirm the scheduled refresh runs green for a week (GitHub delays cron jobs by hours; that is normal)
 
 ## Verifiable Research Desk (sibling repo)
 
@@ -25,9 +25,9 @@ unchecked item.
 - [x] Forecast ledger: hash-chained forecasts and outcomes, scoring, walk-forward backtests
 - [x] Hub site, run tear sheet, in-browser chain verification
 - [x] GitHub Actions: weekday desk run (commit first, then fail on a failed check)
-- [ ] Publish: create the GitHub repo, push, enable Pages from `/docs` (needs owner approval)
-- [ ] After this lab is deployed: the desk's valuation source switches from
-      "local checkout" to "published" on its next run (no code change needed)
+- [x] Published 2026-11-11: https://nnd1106.github.io/verifiable-research-desk/ (desk workflow run once by hand, green;
+      both sources now read as "published")
+- [ ] Watch the first scored outcomes arrive (risk forecasts: next session; valuation calls: 9 Dec 2026)
 - [ ] Optional: add both projects as cards on the portfolio homepage (`nnd1106.github.io`)
 
 ## How to verify

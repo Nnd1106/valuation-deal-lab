@@ -105,7 +105,7 @@ Statements are snapshotted in `data/fundamentals/` so that a refresh is reviewab
 
 ## Key modelling choices
 
-- **EBIT is operating income before other and investment income.** Cash, short-term investments and long-term financial investments are treated as non-operating: added back at book value in the DCF bridge and netted out of enterprise value in every multiple. This matters for cash-rich companies; Maruti carries long-term investments worth about 15% of its market cap that the provider's own enterprise value ignores.
+- **EBIT is operating income before other and investment income.** Cash, short-term investments and long-term financial investments are treated as non-operating: added back at book value in the DCF bridge and netted out of enterprise value in every multiple. This matters for cash-rich companies; Maruti carries long-term investments worth about a sixth of its market cap that the provider's own enterprise value ignores.
 - **Country risk is counted once.** The equity risk premium (Damodaran) already includes India's country premium, so the risk-free rate is the G-sec yield less the sovereign default spread, not the raw G-sec yield.
 - **Bottom-up beta.** A single company's five-year weekly beta has a standard error of around 0.1, so the sector median of unlevered betas is used and relevered at each company's own capital structure.
 - **Terminal growth has to be paid for.** The value-driver formula ties terminal growth to reinvestment. The default RONIC = WACC means growth beyond year ten adds no value, the conservative convention; the slider lets you give a business a lasting advantage.

@@ -28,7 +28,7 @@ unchecked item.
 - [x] Published 2026-11-11: https://nnd1106.github.io/verifiable-research-desk/ (desk workflow run once by hand, green;
       both sources now read as "published")
 - [ ] Watch the first scored outcomes arrive (risk forecasts: next session; valuation calls: 9 Dec 2026)
-- [ ] Optional: add both projects as cards on the portfolio homepage (`nnd1106.github.io`)
+- [x] Both projects added as cards on the portfolio homepage (`nnd1106.github.io`), 2026-11-11
 
 ## How to verify
 

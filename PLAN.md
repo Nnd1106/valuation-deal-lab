@@ -16,6 +16,21 @@ Any session can resume from here: read this file, run the checks under
 - [ ] README and model documentation
 - [ ] Publish to GitHub Pages (needs owner approval before the first push)
 
+### Site design already decided (not built yet)
+
+Single page `docs/index.html`, vanilla JS + Chart.js, same dark theme, tokens and
+signature gradient as `portfolio-construction-lab/docs/assets/css/style.css`.
+It reads `window.VDL_DATA` from `docs/data/deal-lab-data.js` and computes with
+`docs/assets/js/engine.js` (already parity-tested; do not re-implement any math).
+Tabs: 01 Overview (snapshot, price chart, statements, "what the price implies"),
+02 Cost of Capital, 03 DCF (sliders, bridge, WACC x g heatmap, reverse DCF),
+04 Comps, 05 LBO, 06 M&A, 07 Football Field, 08 Model Integrity (re-run parity
+in the browser, gates, sources). Chart colours: validated dark categorical
+slots `#3987e5 #d95926 #199e70 #c98500 #d55181` on surface `#0f131c`; status
+colours `#0ca30c #fab219 #ec835a #d03b3b` with icon and label.
+Frame the DCF as a conservative rules-based baseline and lead with the
+market-implied growth and margin, because most names screen below market.
+
 ## Verifiable Research Desk (sibling repo)
 
 - [ ] Independent re-validation of the Portfolio Construction Lab's published numbers

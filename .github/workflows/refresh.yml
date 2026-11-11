@@ -1,0 +1,54 @@
+name: Data refresh (weekdays)
+
+on:
+  schedule:
+    # 12:30 UTC Mon-Fri = 6:00 PM IST, two and a half hours after the NSE
+    # close, so the day's closes have settled. India has no daylight saving.
+    - cron: "30 12 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # push the refreshed data files back to the repo
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Engine tests
+        run: python -m pytest tests -q
+
+      # Exits non-zero if a data gate or an engine invariant fails; nothing
+      # is then committed and the last good data stays live. Statements are
+      # re-downloaded when their snapshot is more than a week old.
+      - name: Build data
+        run: python pipeline/build_data.py --refresh auto
+
+      - name: Python / browser engine parity on the new data
+        run: node tests/parity.js
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data data/fundamentals
+          git commit -m "Data refresh $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
+          git push

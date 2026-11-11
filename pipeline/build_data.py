@@ -113,7 +113,7 @@ def stage_data(ticker: str, raw: dict | None, hist: pd.DataFrame, market_weekly:
     out = {"ticker": ticker, "name": name, "sector": sector, "gates": g, "flags": []}
     tax = C.MARKET["tax_rate"]
 
-    if not g.check("statements_available", raw is not None, "fundamentals could not be downloaded"):
+    if not g.check("statements_available", raw is not None, "statements downloaded from the data provider"):
         return out
     norm = statements.normalize(raw, usdinr_spot, fx_avg, fx_at)
     out["flags"] += norm["flags"]

@@ -302,20 +302,22 @@
 
     for (const op of ops) {
       const seniorBeg = senior;
+      const revolverBeg = Math.max(0.0, -cash);
       const mandatory = Math.min(seniorBeg, a.senior_amort_pct * seniorInitial);
-      let interest = a.senior_rate * seniorBeg + a.sub_rate * sub;
+      const otherInterest = a.sub_rate * sub + a.senior_rate * revolverBeg;
+      let interest = a.senior_rate * seniorBeg + otherInterest;
       const step = (i) => {
         const ebt = op.ebit - i;
         const tax = Math.max(ebt, 0.0) * taxRate;
         const netIncome = ebt - tax;
         const cfads = netIncome + op.da - op.capex - op.delta_nwc;
-        const sweep = Math.min(seniorBeg - mandatory, Math.max(0.0, cfads - mandatory) * a.sweep_pct);
+        const sweep = Math.min(seniorBeg - mandatory, Math.max(0.0, cfads - mandatory - revolverBeg) * a.sweep_pct);
         return { ebt, tax, netIncome, cfads, sweep, seniorEnd: seniorBeg - mandatory - sweep };
       };
       for (let k = 0; k < 500; k++) {
         const s = step(interest);
         const base = a.interest_on_average ? 0.5 * (seniorBeg + s.seniorEnd) : seniorBeg;
-        const next = a.senior_rate * base + a.sub_rate * sub;
+        const next = a.senior_rate * base + otherInterest;
         const converged = Math.abs(next - interest) <= 1e-13 * Math.max(1.0, Math.abs(interest));
         interest = next;
         if (converged) break;
@@ -324,12 +326,13 @@
       senior = s.seniorEnd;
       cash = cash + s.cfads - mandatory - s.sweep;
       if (cash < -1e-9) shortfall = true;
-      const totalDebt = senior + sub;
+      const revolver = Math.max(0.0, -cash);
+      const totalDebt = senior + sub + revolver;
       rows.push({
         year: op.year, revenue: op.revenue, ebitda: op.ebitda, ebit: op.ebit, interest, ebt: s.ebt, tax: s.tax,
         net_income: s.netIncome, da: op.da, capex: op.capex, delta_nwc: op.delta_nwc, cfads: s.cfads,
         mandatory, sweep: s.sweep, senior_beg: seniorBeg, senior_end: senior, sub_debt: sub, cash_end: cash,
-        total_debt: totalDebt, net_debt: totalDebt - cash,
+        revolver, total_debt: totalDebt, net_debt: senior + sub - cash,
         debt_to_ebitda: op.ebitda > 0 ? totalDebt / op.ebitda : null,
         interest_cover: interest > 0 ? op.ebitda / interest : null,
       });

@@ -14,6 +14,12 @@ average senior balance, which makes interest and the sweep mutually
 dependent; the loop below solves that circularity by fixed-point iteration.
 Subordinated notes pay cash interest and are repaid at exit.
 
+If cash flow cannot cover interest, tax, investment and mandatory
+amortisation, the gap is drawn on a revolver (carried as negative cash). The
+revolver is charged the senior rate on its opening balance and is repaid
+before any cash is swept to the term loan, so a structure that runs short of
+cash pays for it instead of borrowing for free.
+
 `run_lbo` shares the DCF operating case (same growth and margin paths) so
 the two models can never drift apart.
 """
@@ -81,17 +87,20 @@ def run_lbo(a: Dict) -> Dict:
 
     for op in ops:
         senior_beg = senior
+        revolver_beg = max(0.0, -cash)
         mandatory = min(senior_beg, a["senior_amort_pct"] * senior_initial)
-        interest = a["senior_rate"] * senior_beg + a["sub_rate"] * sub
+        other_interest = a["sub_rate"] * sub + a["senior_rate"] * revolver_beg
+        interest = a["senior_rate"] * senior_beg + other_interest
         for _ in range(500):
             ebt = op["ebit"] - interest
             tax = max(ebt, 0.0) * tax_rate
             net_income = ebt - tax
             cfads = net_income + op["da"] - op["capex"] - op["delta_nwc"]
-            sweep = min(senior_beg - mandatory, max(0.0, cfads - mandatory) * a["sweep_pct"])
+            sweep = min(senior_beg - mandatory,
+                        max(0.0, cfads - mandatory - revolver_beg) * a["sweep_pct"])
             senior_end = senior_beg - mandatory - sweep
             base = 0.5 * (senior_beg + senior_end) if a["interest_on_average"] else senior_beg
-            new_interest = a["senior_rate"] * base + a["sub_rate"] * sub
+            new_interest = a["senior_rate"] * base + other_interest
             converged = abs(new_interest - interest) <= 1e-13 * max(1.0, abs(interest))
             interest = new_interest
             if converged:
@@ -100,19 +109,21 @@ def run_lbo(a: Dict) -> Dict:
         tax = max(ebt, 0.0) * tax_rate
         net_income = ebt - tax
         cfads = net_income + op["da"] - op["capex"] - op["delta_nwc"]
-        sweep = min(senior_beg - mandatory, max(0.0, cfads - mandatory) * a["sweep_pct"])
+        sweep = min(senior_beg - mandatory,
+                    max(0.0, cfads - mandatory - revolver_beg) * a["sweep_pct"])
         senior = senior_beg - mandatory - sweep
         cash = cash + cfads - mandatory - sweep
         if cash < -1e-9:
             shortfall = True
-        total_debt = senior + sub
+        revolver = max(0.0, -cash)
+        total_debt = senior + sub + revolver
         rows.append({
             "year": op["year"], "revenue": op["revenue"], "ebitda": op["ebitda"], "ebit": op["ebit"],
             "interest": interest, "ebt": ebt, "tax": tax, "net_income": net_income,
             "da": op["da"], "capex": op["capex"], "delta_nwc": op["delta_nwc"], "cfads": cfads,
             "mandatory": mandatory, "sweep": sweep, "senior_beg": senior_beg, "senior_end": senior,
-            "sub_debt": sub, "cash_end": cash, "total_debt": total_debt,
-            "net_debt": total_debt - cash,
+            "sub_debt": sub, "cash_end": cash, "revolver": revolver, "total_debt": total_debt,
+            "net_debt": senior + sub - cash,
             "debt_to_ebitda": total_debt / op["ebitda"] if op["ebitda"] > 0 else None,
             "interest_cover": op["ebitda"] / interest if interest > 0 else None,
         })

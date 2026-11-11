@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Valuation &amp; Deal Lab: DCF, Comps, LBO and M&amp;A on Indian Large Caps</title>
+<meta name="description" content="An investment-banking valuation platform on real Indian large-cap data: cost of capital, DCF with reverse DCF, trading comps, LBO, M&amp;A accretion/dilution and a football field. Every number is produced by a tested engine and re-verified in your browser." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2305070b'/%3E%3Crect x='14' y='22' width='48' height='13' rx='4' fill='%2300f0ff'/%3E%3Crect x='32' y='44' width='54' height='13' rx='4' fill='%235aa8ff'/%3E%3Crect x='22' y='66' width='40' height='13' rx='4' fill='%238b7bff'/%3E%3Cline x1='50' y1='12' x2='50' y2='88' stroke='%23ff2ec4' stroke-width='5' stroke-dasharray='9 7' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<div class="boot" id="boot" role="status" aria-live="polite">
+  <svg class="boot-mark" viewBox="0 0 92 56" aria-hidden="true" focusable="false"><defs><linearGradient id="bm-boot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00f0ff"/><stop offset="1" stop-color="#8b7bff"/></linearGradient></defs><rect x="6" y="6" width="52" height="10" rx="3" fill="url(#bm-boot)"/><rect x="26" y="23" width="56" height="10" rx="3" fill="url(#bm-boot)"/><rect x="16" y="40" width="40" height="10" rx="3" fill="url(#bm-boot)"/><line x1="46" y1="1" x2="46" y2="55" stroke="#ff2ec4" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/></svg>
+  <span class="boot-label" id="boot-label">Loading valuation data…</span>
+</div>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="app-header">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 92 56" aria-hidden="true" focusable="false"><defs><linearGradient id="bm-head" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00f0ff"/><stop offset="1" stop-color="#8b7bff"/></linearGradient></defs><rect x="6" y="6" width="52" height="10" rx="3" fill="url(#bm-head)"/><rect x="26" y="23" width="56" height="10" rx="3" fill="url(#bm-head)" opacity="0.82"/><rect x="16" y="40" width="40" height="10" rx="3" fill="url(#bm-head)" opacity="0.64"/><line x1="46" y1="1" x2="46" y2="55" stroke="#ff2ec4" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/></svg>
+    <div>
+      <h1>Valuation &amp; Deal Lab</h1>
+      <div class="sub">DCF · Comps · LBO · M&amp;A on Indian large caps · prices as of <span class="as-of" id="as-of">–</span></div>
+    </div>
+  </div>
+  <div class="header-tools">
+    <label class="sr-only" for="company-select">Company</label>
+    <select class="company-select" id="company-select"></select>
+    <button type="button" class="btn signature" id="open-memo" title="A print-ready one-page valuation summary for the selected company">Valuation Memo ↗</button>
+    <span class="live-badge" title="Fundamentals and prices are fetched by a scheduled pipeline; every number is recomputed by a tested engine">REAL DATA · TESTED ENGINE</span>
+  </div>
+</header>
+
+<section class="kpi-strip" aria-label="Selected company summary" id="kpi-strip"></section>
+
+<nav class="tab-nav" role="tablist" aria-label="Modules" id="tab-nav">
+  <button class="tab-btn" role="tab" data-tab="overview" id="tab-overview" aria-controls="panel-overview">01 · Overview</button>
+  <button class="tab-btn" role="tab" data-tab="capital" id="tab-capital" aria-controls="panel-capital">02 · Cost of Capital</button>
+  <button class="tab-btn" role="tab" data-tab="dcf" id="tab-dcf" aria-controls="panel-dcf">03 · DCF</button>
+  <button class="tab-btn" role="tab" data-tab="comps" id="tab-comps" aria-controls="panel-comps">04 · Comps</button>
+  <button class="tab-btn" role="tab" data-tab="lbo" id="tab-lbo" aria-controls="panel-lbo">05 · LBO</button>
+  <button class="tab-btn" role="tab" data-tab="merger" id="tab-merger" aria-controls="panel-merger">06 · M&amp;A</button>
+  <button class="tab-btn" role="tab" data-tab="field" id="tab-field" aria-controls="panel-field">07 · Football Field</button>
+  <button class="tab-btn" role="tab" data-tab="integrity" id="tab-integrity" aria-controls="panel-integrity">08 · Model Integrity</button>
+</nav>
+
+<main id="main-content">
+  <section class="tab-panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview"></section>
+  <section class="tab-panel" id="panel-capital" role="tabpanel" aria-labelledby="tab-capital"></section>
+  <section class="tab-panel" id="panel-dcf" role="tabpanel" aria-labelledby="tab-dcf"></section>
+  <section class="tab-panel" id="panel-comps" role="tabpanel" aria-labelledby="tab-comps"></section>
+  <section class="tab-panel" id="panel-lbo" role="tabpanel" aria-labelledby="tab-lbo"></section>
+  <section class="tab-panel" id="panel-merger" role="tabpanel" aria-labelledby="tab-merger"></section>
+  <section class="tab-panel" id="panel-field" role="tabpanel" aria-labelledby="tab-field"></section>
+  <section class="tab-panel" id="panel-integrity" role="tabpanel" aria-labelledby="tab-integrity"></section>
+</main>
+
+<footer class="footer-note" id="footer-note"></footer>
+
+<div class="memo-overlay" id="memo-overlay" role="dialog" aria-modal="true" aria-label="Valuation memo">
+  <div class="memo-bar">
+    <button type="button" class="btn signature" id="memo-print">Print / Save as PDF</button>
+    <button type="button" class="btn" id="memo-close">Close</button>
+  </div>
+  <article class="memo-page" id="memo-page"></article>
+</div>
+
+<div class="viz-tip" id="viz-tip" aria-hidden="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+  // The data file is refreshed every weekday: an hourly cache key makes sure
+  // a returning visitor never values companies on yesterday's prices.
+  document.write('<script src="data/deal-lab-data.js?h=' + new Date().toISOString().slice(0, 13) + '"><\/script>');
+</script>
+<script src="assets/js/engine.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/tabs/overview.js"></script>
+<script src="assets/js/tabs/capital.js"></script>
+<script src="assets/js/tabs/dcf.js"></script>
+<script src="assets/js/tabs/comps.js"></script>
+<script src="assets/js/tabs/lbo.js"></script>
+<script src="assets/js/tabs/merger.js"></script>
+<script src="assets/js/tabs/field.js"></script>
+<script src="assets/js/tabs/integrity.js"></script>
+<script src="assets/js/memo.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

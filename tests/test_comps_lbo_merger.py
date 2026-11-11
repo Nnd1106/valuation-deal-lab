@@ -184,6 +184,27 @@ def test_lbo_rejects_infeasible_structures():
         lbo.run_lbo(c)
 
 
+def test_lbo_shortfall_is_funded_by_an_interest_bearing_revolver():
+    a = base_lbo()
+    a.update({"senior_amort_pct": 0.5, "margin_start": 0.02, "margin_target": 0.02})
+    out = lbo.run_lbo(a)
+    rows = out["rows"]
+    assert rows[0]["revolver"] > 0
+    for i, r in enumerate(rows):
+        revolver_beg = max(0.0, -rows[i - 1]["cash_end"]) if i else 0.0
+        expected = (a["senior_rate"] * 0.5 * (r["senior_beg"] + r["senior_end"])
+                    + a["sub_rate"] * r["sub_debt"] + a["senior_rate"] * revolver_beg)
+        assert r["interest"] == pytest.approx(expected, rel=1e-11)
+        assert r["revolver"] == pytest.approx(max(0.0, -r["cash_end"]))
+        assert r["total_debt"] == pytest.approx(r["senior_end"] + r["sub_debt"] + r["revolver"])
+        assert r["net_debt"] == pytest.approx(r["senior_end"] + r["sub_debt"] - r["cash_end"])
+        if revolver_beg > 0 and r["cfads"] - r["mandatory"] <= revolver_beg:
+            assert r["sweep"] == 0.0
+    free = dict(a, senior_rate=0.0)
+    assert sum(x["interest"] for x in rows) > sum(x["interest"] for x in lbo.run_lbo(free)["rows"])
+    assert sum(out["attribution"].values()) == pytest.approx(out["value_creation"], rel=1e-9, abs=1e-6)
+
+
 def test_lbo_flags_liquidity_shortfall():
     a = base_lbo()
     a.update({"senior_amort_pct": 0.5, "margin_start": 0.02, "margin_target": 0.02})

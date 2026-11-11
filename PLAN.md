@@ -1,8 +1,9 @@
 # Build plan and status
 
-Working checklist for this repo and its sibling `verifiable-research-desk`.
-Any session can resume from here: read this file, run the checks under
-"How to verify", then continue with the first unchecked item.
+Working checklist for this repo and its sibling `verifiable-research-desk`
+(checked out next to this one). Any session can resume from here: read this
+file, run the checks under "How to verify", then continue with the first
+unchecked item.
 
 ## Valuation & Deal Lab (this repo)
 
@@ -10,40 +11,37 @@ Any session can resume from here: read this file, run the checks under
 - [x] Test suite against closed forms and accounting identities (`tests/`)
 - [x] Pipeline: keyless fetch, weekly fundamentals snapshots, data gates, engine invariants
 - [x] Browser engine (`docs/assets/js/engine.js`) and Python/JS parity test (`tests/parity.js`)
-- [ ] Site: company, cost of capital, DCF, comps, LBO, M&A, football field, model integrity
-- [ ] Valuation memo (print-ready one-pager per company)
-- [ ] GitHub Actions: CI (tests + parity) and weekday data refresh
-- [ ] README and model documentation
-- [ ] Publish to GitHub Pages (needs owner approval before the first push)
-
-### Site design already decided (not built yet)
-
-Single page `docs/index.html`, vanilla JS + Chart.js, same dark theme, tokens and
-signature gradient as `portfolio-construction-lab/docs/assets/css/style.css`.
-It reads `window.VDL_DATA` from `docs/data/deal-lab-data.js` and computes with
-`docs/assets/js/engine.js` (already parity-tested; do not re-implement any math).
-Tabs: 01 Overview (snapshot, price chart, statements, "what the price implies"),
-02 Cost of Capital, 03 DCF (sliders, bridge, WACC x g heatmap, reverse DCF),
-04 Comps, 05 LBO, 06 M&A, 07 Football Field, 08 Model Integrity (re-run parity
-in the browser, gates, sources). Chart colours: validated dark categorical
-slots `#3987e5 #d95926 #199e70 #c98500 #d55181` on surface `#0f131c`; status
-colours `#0ca30c #fab219 #ec835a #d03b3b` with icon and label.
-Frame the DCF as a conservative rules-based baseline and lead with the
-market-implied growth and margin, because most names screen below market.
+- [x] Site: overview, cost of capital, DCF, comps, LBO, M&A, football field, model integrity
+- [x] Valuation memo (print-ready one-pager per company)
+- [x] GitHub Actions: CI (tests + parity) and weekday data refresh
+- [x] README
+- [ ] Publish: create the GitHub repo, push, enable Pages from `/docs` (needs owner approval)
+- [ ] After the first deploy: confirm the scheduled refresh runs green for a week
 
 ## Verifiable Research Desk (sibling repo)
 
-- [ ] Independent re-validation of the Portfolio Construction Lab's published numbers
-- [ ] Independent re-validation of this lab's published numbers
-- [ ] Forecast ledger: hash-chained, git-timestamped forecasts and scoring
-- [ ] Hub site linking all three projects, weekly tear sheets
+- [x] Independent re-validation of the Portfolio Construction Lab (33 checks)
+- [x] Independent re-validation of this lab (22 checks, DCF re-valued by economic profit)
+- [x] Forecast ledger: hash-chained forecasts and outcomes, scoring, walk-forward backtests
+- [x] Hub site, run tear sheet, in-browser chain verification
+- [x] GitHub Actions: weekday desk run (commit first, then fail on a failed check)
+- [ ] Publish: create the GitHub repo, push, enable Pages from `/docs` (needs owner approval)
+- [ ] After this lab is deployed: the desk's valuation source switches from
+      "local checkout" to "published" on its next run (no code change needed)
+- [ ] Optional: add both projects as cards on the portfolio homepage (`nnd1106.github.io`)
 
 ## How to verify
 
 ```bash
+# this repo
 python -m pytest tests -q
 python pipeline/build_data.py --refresh never
 node tests/parity.js
+
+# sibling repo
+cd ../verifiable-research-desk
+python -m pytest tests -q
+python run.py --assert-clean
 ```
 
 ## Decisions already made (do not relitigate)
@@ -57,6 +55,19 @@ node tests/parity.js
 - Risk-free rate = 10-year G-sec yield less the sovereign default spread; the
   equity risk premium already includes India's country premium (Damodaran).
 - Terminal value uses the value-driver formula with RONIC = WACC by default.
+- Capex fades with growth to a steady state: the lower of history scaled to
+  terminal growth and what the terminal value assumes, never below depreciation.
 - The DCF values the firm at the last fiscal year-end and rolls equity forward
   to the valuation date at the cost of equity, net of dividends paid since.
+- LBO cash shortfalls draw on a revolver at the senior rate.
 - No runtime AI and no API keys anywhere. Everything is deterministic.
+- The desk never imports code from the projects it validates, and its ledger
+  is append-only: never rewrite or re-order `docs/ledger/*.jsonl`.
+
+## Maintenance notes
+
+- `pipeline/config.py` holds the G-sec yield and equity risk premium with
+  their sources and dates. The build warns when they are stale (45 and 400
+  days). Update the value, the date and the source text together.
+- If the engine changes, change `engine/*.py` and `docs/assets/js/engine.js`
+  together; `tests/parity.js` fails until they agree.

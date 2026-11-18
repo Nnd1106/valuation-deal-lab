@@ -644,17 +644,17 @@
    "Unrealized Gain Loss On Investment Securities": -2359000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:32Z",
+ "fetched_utc": "2026-11-18T20:49:32Z",
  "income": {
   "2022-03-31": {
    "Write Off": 7562000000.0
   },
   "2023-03-31": {
-   "Basic Average Shares": 830174450.0,
-   "Basic EPS": 54.28,
+   "Basic Average Shares": 830165396.0,
+   "Basic EPS": 54.294,
    "Cost Of Revenue": 106536000000.0,
-   "Diluted Average Shares": 831940850.0,
-   "Diluted EPS": 54.17,
+   "Diluted Average Shares": 831912145.0,
+   "Diluted EPS": 54.18,
    "Diluted NI Availto Com Stockholders": 45067000000.0,
    "EBIT": 61795000000.0,
    "EBITDA": 74431000000.0,
@@ -700,11 +700,11 @@
    "Write Off": 699000000.0
   },
   "2024-03-31": {
-   "Basic Average Shares": 831968515.0,
-   "Basic EPS": 66.93,
+   "Basic Average Shares": 831976016.0,
+   "Basic EPS": 67.044,
    "Cost Of Revenue": 115557000000.0,
-   "Diluted Average Shares": 833537680.0,
-   "Diluted EPS": 66.8,
+   "Diluted Average Shares": 833542545.0,
+   "Diluted EPS": 66.918,
    "Diluted NI Availto Com Stockholders": 55684000000.0,
    "EBIT": 73581000000.0,
    "EBITDA": 88422000000.0,
@@ -751,13 +751,13 @@
    "Write Off": 3000000.0
   },
   "2025-03-31": {
-   "Basic Average Shares": 832950406.0,
-   "Basic EPS": 67.88,
+   "Basic Average Shares": 832979820.0,
+   "Basic EPS": 67.89,
    "Cost Of Revenue": 135107000000.0,
    "Depreciation Amortization Depletion Income Statement": 17037000000.0,
    "Depreciation And Amortization In Income Statement": 17037000000.0,
-   "Diluted Average Shares": 834179134.0,
-   "Diluted EPS": 67.78,
+   "Diluted Average Shares": 834208585.0,
+   "Diluted EPS": 67.79,
    "Diluted NI Availto Com Stockholders": 56544000000.0,
    "EBIT": 79613000000.0,
    "EBITDA": 96671000000.0,
@@ -862,11 +862,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1377.0,
+  "currentPrice": 1398.2,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Dr. Reddy's Laboratories Limited",
-  "previousClose": 1385.0,
+  "previousClose": 1388.0,
   "sector": "Healthcare",
   "sharesOutstanding": 833664120,
   "trailingEps": 33.59
@@ -1286,7 +1286,7 @@
    "Non Current Deferred Liabilities": 16187000000.0,
    "Non Current Deferred Taxes Assets": 23155000000.0,
    "Non Current Deferred Taxes Liabilities": 16187000000.0,
-   "Ordinary Shares Number": 833072850.0,
+   "Ordinary Shares Number": 832988625.0,
    "Other Current Assets": 38465000000.0,
    "Other Current Borrowings": 60594000000.0,
    "Other Current Liabilities": 47755000000.0,
@@ -1301,7 +1301,7 @@
    "Payables And Accrued Expenses": 38887000000.0,
    "Receivables": 101399000000.0,
    "Retained Earnings": 359005000000.0,
-   "Share Issued": 833072850.0,
+   "Share Issued": 832988625.0,
    "Stockholders Equity": 386179000000.0,
    "Tangible Book Value": 269034000000.0,
    "Total Assets": 574481000000.0,
@@ -1318,6 +1318,7 @@
  },
  "q_income": {
   "2025-03-31": {
+   "Cost Of Revenue": 28500000000.0,
    "Depreciation Amortization Depletion Income Statement": 4547000000.0,
    "Depreciation And Amortization In Income Statement": 4547000000.0,
    "Gain On Sale Of Ppe": 1067000000.0,
@@ -1348,7 +1349,6 @@
    "Total Operating Income As Reported": 17475000000.0
   },
   "2025-09-30": {
-   "Cost Of Revenue": 39911000000.0,
    "Diluted NI Availto Com Stockholders": 14372000000.0,
    "EBIT": 19257000000.0,
    "EBITDA": 24308000000.0,
@@ -1395,7 +1395,6 @@
   "2025-12-31": {
    "Basic Average Shares": 832622161.0,
    "Basic EPS": 14.53,
-   "Cost Of Revenue": 40462000000.0,
    "Diluted Average Shares": 833195592.0,
    "Diluted EPS": 14.52,
    "Diluted NI Availto Com Stockholders": 12098000000.0,

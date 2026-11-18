@@ -542,7 +542,7 @@
    "Taxes Refund Paid": -2088300000.0
   }
  },
- "fetched_utc": "2026-11-11T11:33:14Z",
+ "fetched_utc": "2026-11-18T20:49:54Z",
  "income": {
   "2023-03-31": {
    "Amortization": 90000000.0,
@@ -765,11 +765,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 5273.8,
+  "currentPrice": 5151.8,
   "financialCurrency": "INR",
   "industry": "Building Materials",
   "longName": "J.K. Cement Limited",
-  "previousClose": 5052.4,
+  "previousClose": 5237.5,
   "sector": "Basic Materials",
   "sharesOutstanding": 77268251,
   "trailingEps": 123.98

@@ -578,7 +578,7 @@
    "Taxes Refund Paid": -15862000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:35Z",
+ "fetched_utc": "2026-11-18T20:49:34Z",
  "income": {
   "2023-03-31": {
    "Amortization": 3141700000.0,
@@ -601,7 +601,6 @@
    "Interest Income Non Operating": 1622400000.0,
    "Minority Interests": -309800000.0,
    "Net Income": 28019100000.0,
-   "Net Income Common Stockholders": 28019100000.0,
    "Net Income Continuous Operations": 28328900000.0,
    "Net Income From Continuing And Discontinued Operation": 28019100000.0,
    "Net Income From Continuing Operation Net Minority Interest": 28019100000.0,
@@ -656,7 +655,6 @@
    "Interest Income Non Operating": 2195900000.0,
    "Minority Interests": -321700000.0,
    "Net Income": 41215500000.0,
-   "Net Income Common Stockholders": 41215500000.0,
    "Net Income Continuous Operations": 41537200000.0,
    "Net Income From Continuing And Discontinued Operation": 41215500000.0,
    "Net Income From Continuing Operation Net Minority Interest": 41215500000.0,
@@ -711,7 +709,6 @@
    "Interest Income Non Operating": 2644000000.0,
    "Minority Interests": 33200000.0,
    "Net Income": 52725200000.0,
-   "Net Income Common Stockholders": 52725200000.0,
    "Net Income Continuous Operations": 52692000000.0,
    "Net Income From Continuing And Discontinued Operation": 52725200000.0,
    "Net Income From Continuing Operation Net Minority Interest": 52725200000.0,
@@ -805,11 +802,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1419.9,
+  "currentPrice": 1417.0,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Cipla Limited",
-  "previousClose": 1403.8,
+  "previousClose": 1388.0,
   "sector": "Healthcare",
   "sharesOutstanding": 807888068,
   "trailingEps": 35.84
@@ -838,7 +835,6 @@
    "Current Debt": 801200000.0,
    "Current Debt And Capital Lease Obligation": 1857200000.0,
    "Current Liabilities": 54839600000.0,
-   "Current Provisions": 17166100000.0,
    "Derivative Product Liabilities": 308100000.0,
    "Dividends Payable": 142900000.0,
    "Financial Assets": 117600000.0,
@@ -1077,7 +1073,6 @@
    "Normalized Income": 12976200000.0,
    "Operating Expense": 31409100000.0,
    "Operating Income": 15254200000.0,
-   "Operating Revenue": 68370400000.0,
    "Other Non Operating Income Expenses": 2585600000.0,
    "Other Operating Expenses": 16963200000.0,
    "Otherunder Preferred Stock Dividend": 0.0,
@@ -1124,7 +1119,6 @@
    "Normalized Income": 8841929746.615759,
    "Operating Expense": 33541800000.0,
    "Operating Income": 9767100000.0,
-   "Operating Revenue": 69629700000.0,
    "Other Non Operating Income Expenses": 2063400000.0,
    "Other Operating Expenses": 18623600000.0,
    "Other Special Charges": 2759100000.0,

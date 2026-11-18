@@ -584,7 +584,7 @@
    "Taxes Refund Paid": -973000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:31:54Z",
+ "fetched_utc": "2026-11-18T20:49:13Z",
  "income": {
   "2022-03-31": {
    "Rent And Landing Fees": 6000000.0,
@@ -699,10 +699,10 @@
    "Write Off": 15000000.0
   },
   "2025-03-31": {
-   "Basic Average Shares": 4141611738.0,
+   "Basic Average Shares": 4155263158.0,
    "Basic EPS": 0.76,
    "Cost Of Revenue": 13405000000.0,
-   "Diluted Average Shares": 4152051184.0,
+   "Diluted Average Shares": 4155263158.0,
    "Diluted EPS": 0.76,
    "Diluted NI Availto Com Stockholders": 3158000000.0,
    "EBIT": 4496000000.0,
@@ -807,11 +807,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1155.0,
+  "currentPrice": 1108.8,
   "financialCurrency": "USD",
   "industry": "Information Technology Services",
   "longName": "Infosys Limited",
-  "previousClose": 1154.1,
+  "previousClose": 1130.0,
   "sector": "Technology",
   "sharesOutstanding": 4050376561,
   "trailingEps": 75.1

@@ -555,7 +555,7 @@
    "Taxes Refund Paid": -3987900000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:22Z",
+ "fetched_utc": "2026-11-18T20:49:26Z",
  "income": {
   "2023-03-31": {
    "Amortization": 333200000.0,
@@ -776,11 +776,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 382.6,
+  "currentPrice": 379.25,
   "financialCurrency": "INR",
   "industry": "Household & Personal Products",
   "longName": "Dabur India Limited",
-  "previousClose": 375.25,
+  "previousClose": 384.3,
   "sector": "Consumer Defensive",
   "sharesOutstanding": 1774065197,
   "trailingEps": 11.39

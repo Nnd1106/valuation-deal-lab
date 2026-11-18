@@ -374,7 +374,6 @@
    "Gain Loss On Investment Securities": -263100000.0,
    "Gain Loss On Sale Of PPE": -209800000.0,
    "Interest Paid Cff": -2266800000.0,
-   "Interest Received Cfi": 324300000.0,
    "Investing Cash Flow": -12867700000.0,
    "Issuance Of Capital Stock": 19400000.0,
    "Issuance Of Debt": 0.0,
@@ -424,7 +423,6 @@
    "Gain Loss On Investment Securities": -398400000.0,
    "Gain Loss On Sale Of PPE": -11700000.0,
    "Interest Paid Cff": -2829100000.0,
-   "Interest Received Cfi": 462400000.0,
    "Investing Cash Flow": -17122000000.0,
    "Issuance Of Capital Stock": 145500000.0,
    "Issuance Of Debt": 0.0,
@@ -475,7 +473,6 @@
    "Gain Loss On Sale Of Business": 0.0,
    "Gain Loss On Sale Of PPE": -2800000.0,
    "Interest Paid Cff": -2551400000.0,
-   "Interest Received Cfi": 1298500000.0,
    "Investing Cash Flow": -41718900000.0,
    "Issuance Of Capital Stock": 398600000.0,
    "Issuance Of Debt": 12208700000.0,
@@ -559,7 +556,7 @@
    "Taxes Refund Paid": -12673500000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:39Z",
+ "fetched_utc": "2026-11-18T20:49:35Z",
  "income": {
   "2023-03-31": {
    "Basic Average Shares": 454692962.0,
@@ -567,7 +564,6 @@
    "Cost Of Revenue": 72648900000.0,
    "Depreciation And Amortization In Income Statement": 8806900000.0,
    "Depreciation Income Statement": 8806900000.0,
-   "Diluted Average Shares": 456946986.0,
    "Diluted EPS": 9.41,
    "Diluted NI Availto Com Stockholders": 4300800000.0,
    "EBIT": 9567000000.0,
@@ -620,7 +616,6 @@
    "Cost Of Revenue": 71467800000.0,
    "Depreciation And Amortization In Income Statement": 11968100000.0,
    "Depreciation Income Statement": 11968100000.0,
-   "Diluted Average Shares": 457225997.0,
    "Diluted EPS": 41.87,
    "Diluted NI Availto Com Stockholders": 19144800000.0,
    "EBIT": 27013100000.0,
@@ -779,13 +774,13 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 2023.4,
+  "currentPrice": 1971.9,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Lupin Limited",
-  "previousClose": 2025.0,
+  "previousClose": 1950.0,
   "sector": "Healthcare",
-  "sharesOutstanding": 457289972,
+  "sharesOutstanding": 457293005,
   "trailingEps": 113.48
  },
  "q_balance": {

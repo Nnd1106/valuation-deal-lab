@@ -360,7 +360,6 @@
    "Changes In Cash": -4560000000.0,
    "Common Stock Issuance": -20000000.0,
    "Depreciation": 11520000000.0,
-   "Depreciation And Amortization": 11520000000.0,
    "Dividends Received Cfi": 20000000.0,
    "End Cash Position": 7010000000.0,
    "Financing Cash Flow": -89530000000.0,
@@ -414,7 +413,6 @@
    "Changes In Cash": 1110000000.0,
    "Common Stock Issuance": 0.0,
    "Depreciation": 11910000000.0,
-   "Depreciation And Amortization": 12160000000.0,
    "Dividends Received Cfi": 30000000.0,
    "End Cash Position": 8120000000.0,
    "Financing Cash Flow": -100340000000.0,
@@ -466,7 +464,6 @@
    "Change In Working Capital": -7880000000.0,
    "Changes In Cash": 52580000000.0,
    "Depreciation": 13630000000.0,
-   "Depreciation And Amortization": 13630000000.0,
    "Dividends Received Cfi": 0.0,
    "End Cash Position": 60700000000.0,
    "Financing Cash Flow": -131010000000.0,
@@ -512,7 +509,6 @@
    "Change In Working Capital": 6860000000.0,
    "Changes In Cash": -34950000000.0,
    "Depreciation": 14360000000.0,
-   "Depreciation And Amortization": 14360000000.0,
    "Dividends Received Cfi": 50000000.0,
    "End Cash Position": 25830000000.0,
    "Financing Cash Flow": -108100000000.0,
@@ -548,7 +544,7 @@
    "Taxes Refund Paid": -48400000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:07Z",
+ "fetched_utc": "2026-11-18T20:49:20Z",
  "income": {
   "2022-03-31": {
    "Net Income Discontinuous Operations": 30000000.0,
@@ -772,11 +768,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 2022.4,
+  "currentPrice": 1993.0,
   "financialCurrency": "INR",
   "industry": "Household & Personal Products",
   "longName": "Hindustan Unilever Limited",
-  "previousClose": 1990.3,
+  "previousClose": 2009.9,
   "sector": "Consumer Defensive",
   "sharesOutstanding": 2349591262,
   "trailingEps": 45.04

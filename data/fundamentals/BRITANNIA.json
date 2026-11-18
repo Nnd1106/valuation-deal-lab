@@ -531,7 +531,7 @@
    "Taxes Refund Paid": -8217400000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:18Z",
+ "fetched_utc": "2026-11-18T20:49:24Z",
  "income": {
   "2022-03-31": {
    "Restructuring And Mergern Acquisition": 9800000.0,
@@ -755,11 +755,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 4820.0,
+  "currentPrice": 4673.2,
   "financialCurrency": "INR",
   "industry": "Packaged Foods",
   "longName": "Britannia Industries Limited",
-  "previousClose": 4790.0,
+  "previousClose": 4700.0,
   "sector": "Consumer Defensive",
   "sharesOutstanding": 240868296,
   "trailingEps": 110.87

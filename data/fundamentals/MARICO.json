@@ -541,7 +541,7 @@
    "Taxes Refund Paid": -5650000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:25Z",
+ "fetched_utc": "2026-11-18T20:49:28Z",
  "income": {
   "2022-03-31": {
    "Impairment Of Capital Assets": 0.0,
@@ -762,13 +762,13 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 925.0,
+  "currentPrice": 906.05,
   "financialCurrency": "INR",
   "industry": "Household & Personal Products",
   "longName": "Marico Limited",
-  "previousClose": 902.0,
+  "previousClose": 924.0,
   "sector": "Consumer Defensive",
-  "sharesOutstanding": 1297992656,
+  "sharesOutstanding": 1298041265,
   "trailingEps": 15.56
  },
  "q_balance": {

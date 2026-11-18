@@ -562,7 +562,7 @@
    "Taxes Refund Paid": -990000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:33:10Z",
+ "fetched_utc": "2026-11-18T20:49:52Z",
  "income": {
   "2023-03-31": {
    "Amortization": 3400000000.0,
@@ -787,11 +787,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1483.7,
+  "currentPrice": 1510.9,
   "financialCurrency": "INR",
   "industry": "Building Materials",
   "longName": "Dalmia Bharat Limited",
-  "previousClose": 1466.3,
+  "previousClose": 1524.3,
   "sector": "Basic Materials",
   "sharesOutstanding": 187565953,
   "trailingEps": 26.11

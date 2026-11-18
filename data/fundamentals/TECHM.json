@@ -554,7 +554,7 @@
    "Taxes Refund Paid": -16502000000.0
   }
  },
- "fetched_utc": "2026-11-11T11:32:04Z",
+ "fetched_utc": "2026-11-18T20:49:19Z",
  "income": {
   "2022-03-31": {
    "Total Other Finance Cost": 215000000.0
@@ -777,13 +777,13 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1788.5,
+  "currentPrice": 1750.0,
   "financialCurrency": "INR",
   "industry": "Information Technology Services",
   "longName": "Tech Mahindra Limited",
-  "previousClose": 1805.0,
+  "previousClose": 1762.0,
   "sector": "Technology",
-  "sharesOutstanding": 980205040,
+  "sharesOutstanding": 885969411,
   "trailingEps": 62.22
  },
  "q_balance": {
@@ -992,7 +992,7 @@
    "Net Tangible Assets": 191053000000.0,
    "Non Current Deferred Taxes Assets": 19017000000.0,
    "Non Current Deferred Taxes Liabilities": 2151000000.0,
-   "Ordinary Shares Number": 885923456.0,
+   "Ordinary Shares Number": 980159085.0,
    "Other Current Assets": 52113000000.0,
    "Other Current Liabilities": 23954000000.0,
    "Other Equity Interest": 292299000000.0,
@@ -1003,7 +1003,7 @@
    "Other Receivables": 71139000000.0,
    "Other Short Term Investments": 31439000000.0,
    "Payables": 69758000000.0,
-   "Share Issued": 885923456.0,
+   "Share Issued": 980159085.0,
    "Stockholders Equity": 296729000000.0,
    "Tangible Book Value": 191053000000.0,
    "Total Assets": 488030000000.0,

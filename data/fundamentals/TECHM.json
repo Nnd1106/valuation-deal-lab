@@ -554,7 +554,7 @@
    "Taxes Refund Paid": -16502000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:19Z",
+ "fetched_utc": "2026-11-25T21:55:37Z",
  "income": {
   "2022-03-31": {
    "Total Other Finance Cost": 215000000.0
@@ -777,13 +777,13 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1750.0,
+  "currentPrice": 1801.2,
   "financialCurrency": "INR",
   "industry": "Information Technology Services",
   "longName": "Tech Mahindra Limited",
-  "previousClose": 1762.0,
+  "previousClose": 1777.5,
   "sector": "Technology",
-  "sharesOutstanding": 885969411,
+  "sharesOutstanding": 886419727,
   "trailingEps": 62.22
  },
  "q_balance": {

@@ -525,7 +525,6 @@
    "Gain Loss On Sale Of Business": -279400000.0,
    "Gain Loss On Sale Of PPE": -42700000.0,
    "Interest Paid Cff": -3996300000.0,
-   "Interest Received Cfi": 2168700000.0,
    "Investing Cash Flow": -38645900000.0,
    "Issuance Of Capital Stock": 164600000.0,
    "Issuance Of Debt": 0.0,
@@ -556,7 +555,7 @@
    "Taxes Refund Paid": -12673500000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:35Z",
+ "fetched_utc": "2026-11-25T21:55:57Z",
  "income": {
   "2023-03-31": {
    "Basic Average Shares": 454692962.0,
@@ -669,7 +668,6 @@
    "Cost Of Revenue": 74559600000.0,
    "Depreciation And Amortization In Income Statement": 11692600000.0,
    "Depreciation Income Statement": 11692600000.0,
-   "Diluted Average Shares": 457774407.0,
    "Diluted EPS": 71.69,
    "Diluted NI Availto Com Stockholders": 32816200000.0,
    "EBIT": 42855300000.0,
@@ -723,7 +721,6 @@
    "Cost Of Revenue": 81107500000.0,
    "Depreciation And Amortization In Income Statement": 13755000000.0,
    "Depreciation Income Statement": 13755000000.0,
-   "Diluted Average Shares": 457987123.0,
    "Diluted EPS": 116.44,
    "Diluted NI Availto Com Stockholders": 53328400000.0,
    "EBIT": 72850500000.0,
@@ -774,11 +771,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1971.9,
+  "currentPrice": 2003.8,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Lupin Limited",
-  "previousClose": 1950.0,
+  "previousClose": 1975.6,
   "sector": "Healthcare",
   "sharesOutstanding": 457293005,
   "trailingEps": 113.48

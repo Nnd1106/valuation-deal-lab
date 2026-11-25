@@ -263,7 +263,6 @@
    "Dividends Payable": 302700000.0,
    "Financial Assets Designatedas Fair Value Through Profitor Loss Total": 20258500000.0,
    "Finished Goods": 11934600000.0,
-   "Goodwill And Other Intangible Assets": 13207300000.0,
    "Gross Accounts Receivable": 24977800000.0,
    "Gross PPE": 130628900000.0,
    "Held To Maturity Securities": 11544800000.0,
@@ -518,7 +517,7 @@
    "Taxes Refund Paid": -11667600000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:45Z",
+ "fetched_utc": "2026-11-25T21:56:08Z",
  "income": {
   "2022-03-31": {
    "Amortization": 514300000.0
@@ -736,11 +735,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 5253.0,
+  "currentPrice": 5751.5,
   "financialCurrency": "INR",
   "industry": "Auto Manufacturers",
   "longName": "Hero MotoCorp Limited",
-  "previousClose": 5329.0,
+  "previousClose": 5535.0,
   "sector": "Consumer Cyclical",
   "sharesOutstanding": 200161822,
   "trailingEps": 299.65

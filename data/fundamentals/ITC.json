@@ -539,7 +539,7 @@
    "Taxes Refund Paid": -63736100000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:22Z",
+ "fetched_utc": "2026-11-25T21:55:42Z",
  "income": {
   "2022-03-31": {
    "Research And Development": 1992400000.0,
@@ -763,11 +763,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 296.6,
+  "currentPrice": 309.25,
   "financialCurrency": "INR",
   "industry": "Tobacco",
   "longName": "ITC Limited",
-  "previousClose": 293.3,
+  "previousClose": 301.0,
   "sector": "Consumer Defensive",
   "sharesOutstanding": 12532697881,
   "trailingEps": 15.07
@@ -994,7 +994,6 @@
  },
  "q_income": {
   "2025-03-31": {
-   "Net Income Common Stockholders": 49311900000.0,
    "Net Income Discontinuous Operations": 0.0
   },
   "2025-06-30": {
@@ -1102,7 +1101,6 @@
    "Interest Expense Non Operating": 291800000.0,
    "Minority Interests": -817700000.0,
    "Net Income": 53879700000.0,
-   "Net Income Common Stockholders": 53879700000.0,
    "Net Income Continuous Operations": 54697400000.0,
    "Net Income Discontinuous Operations": 0.0,
    "Net Income From Continuing And Discontinued Operation": 53879700000.0,

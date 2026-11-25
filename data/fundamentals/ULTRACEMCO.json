@@ -581,7 +581,7 @@
    "Taxes Refund Paid": -13006900000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:46Z",
+ "fetched_utc": "2026-11-25T21:56:10Z",
  "income": {
   "2022-03-31": {
    "Net Income Discontinuous Operations": 1599200000.0,
@@ -810,14 +810,14 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 12428.0,
+  "currentPrice": 12800.0,
   "financialCurrency": "INR",
   "industry": "Building Materials",
   "longName": "UltraTech Cement Limited",
-  "previousClose": 12290.0,
+  "previousClose": 12650.0,
   "sector": "Basic Materials",
   "sharesOutstanding": 294064622,
-  "trailingEps": 299.04
+  "trailingEps": 295.72
  },
  "q_balance": {
   "2025-03-31": {

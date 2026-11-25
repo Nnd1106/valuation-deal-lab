@@ -564,7 +564,7 @@
    "Taxes Refund Paid": -23139400000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:30Z",
+ "fetched_utc": "2026-11-25T21:55:51Z",
  "income": {
   "2023-03-31": {
    "Basic Average Shares": 2399334970.0,
@@ -787,11 +787,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1871.5,
+  "currentPrice": 1901.0,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Sun Pharmaceutical Industries Limited",
-  "previousClose": 1870.0,
+  "previousClose": 1860.0,
   "sector": "Healthcare",
   "sharesOutstanding": 2399334970,
   "trailingEps": 45.7
@@ -882,7 +882,6 @@
    "Working Capital": 344302600000.0
   },
   "2026-03-31": {
-   "Accounts Payable": 73338000000.0,
    "Accounts Receivable": 155096700000.0,
    "Accumulated Depreciation": -155152700000.0,
    "Additional Paid In Capital": 11881600000.0,
@@ -944,7 +943,6 @@
    "Other Payable": 20211200000.0,
    "Other Properties": 111141100000.0,
    "Other Receivables": -403300000.0,
-   "Other Short Term Investments": 240109500000.0,
    "Payables": 93729000000.0,
    "Pensionand Other Post Retirement Benefit Plans Current": 10988600000.0,
    "Prepaid Assets": 30102200000.0,

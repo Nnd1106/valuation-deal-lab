@@ -503,7 +503,7 @@
    "Taxes Refund Paid": -43372000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:39Z",
+ "fetched_utc": "2026-11-25T21:56:02Z",
  "income": {
   "2022-03-31": {
    "Total Other Finance Cost": 569000000.0
@@ -719,14 +719,14 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 12632.0,
+  "currentPrice": 14200.0,
   "financialCurrency": "INR",
   "industry": "Auto Manufacturers",
   "longName": "Maruti Suzuki India Limited",
-  "previousClose": 12625.0,
+  "previousClose": 14010.0,
   "sector": "Consumer Cyclical",
   "sharesOutstanding": 314402574,
-  "trailingEps": 427.84
+  "trailingEps": 427.82
  },
  "q_balance": {
   "2025-03-31": {

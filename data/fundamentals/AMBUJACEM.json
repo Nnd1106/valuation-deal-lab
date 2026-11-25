@@ -543,7 +543,7 @@
    "Taxes Refund Paid": 2822100000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:50Z",
+ "fetched_utc": "2026-11-25T21:56:14Z",
  "income": {
   "2021-12-31": {
    "Amortization": 165000000.0,
@@ -768,11 +768,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 384.8,
+  "currentPrice": 392.0,
   "financialCurrency": "INR",
   "industry": "Building Materials",
   "longName": "Ambuja Cements Limited",
-  "previousClose": 390.2,
+  "previousClose": 391.95,
   "sector": "Basic Materials",
   "sharesOutstanding": 2484817186,
   "trailingEps": 11.27

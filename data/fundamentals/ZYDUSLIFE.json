@@ -315,7 +315,6 @@
    "Long Term Debt": 31880000000.0,
    "Long Term Debt And Capital Lease Obligation": 38563000000.0,
    "Long Term Equity Investment": 11666000000.0,
-   "Long Term Provisions": 4453000000.0,
    "Machinery Furniture Equipment": 107232000000.0,
    "Minority Interest": 24708000000.0,
    "Net Debt": 109143000000.0,
@@ -584,7 +583,7 @@
    "Taxes Refund Paid": -15910000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:37Z",
+ "fetched_utc": "2026-11-25T21:55:59Z",
  "income": {
   "2022-03-31": {
    "Impairment Of Capital Assets": 0.0,
@@ -823,11 +822,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1202.0,
+  "currentPrice": 1236.0,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Zydus Lifesciences Limited",
-  "previousClose": 1204.2,
+  "previousClose": 1199.5,
   "sector": "Healthcare",
   "sharesOutstanding": 997503832,
   "trailingEps": 41.85

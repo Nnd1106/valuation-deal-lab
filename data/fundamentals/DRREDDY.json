@@ -644,7 +644,7 @@
    "Unrealized Gain Loss On Investment Securities": -2359000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:32Z",
+ "fetched_utc": "2026-11-25T21:55:53Z",
  "income": {
   "2022-03-31": {
    "Write Off": 7562000000.0
@@ -862,11 +862,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1398.2,
+  "currentPrice": 1398.0,
   "financialCurrency": "INR",
   "industry": "Drug Manufacturers - Specialty & Generic",
   "longName": "Dr. Reddy's Laboratories Limited",
-  "previousClose": 1388.0,
+  "previousClose": 1380.1,
   "sector": "Healthcare",
   "sharesOutstanding": 833664120,
   "trailingEps": 33.59
@@ -1318,7 +1318,6 @@
  },
  "q_income": {
   "2025-03-31": {
-   "Cost Of Revenue": 28500000000.0,
    "Depreciation Amortization Depletion Income Statement": 4547000000.0,
    "Depreciation And Amortization In Income Statement": 4547000000.0,
    "Gain On Sale Of Ppe": 1067000000.0,
@@ -1443,7 +1442,6 @@
   "2026-03-31": {
    "Basic Average Shares": 833584906.0,
    "Basic EPS": 2.65,
-   "Cost Of Revenue": 32127000000.0,
    "Depreciation Amortization Depletion Income Statement": 5571000000.0,
    "Depreciation And Amortization In Income Statement": 5571000000.0,
    "Diluted Average Shares": 833584906.0,

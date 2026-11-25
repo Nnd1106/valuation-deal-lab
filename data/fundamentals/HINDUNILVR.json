@@ -544,7 +544,7 @@
    "Taxes Refund Paid": -48400000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:20Z",
+ "fetched_utc": "2026-11-25T21:55:40Z",
  "income": {
   "2022-03-31": {
    "Net Income Discontinuous Operations": 30000000.0,
@@ -768,11 +768,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1993.0,
+  "currentPrice": 2141.8,
   "financialCurrency": "INR",
   "industry": "Household & Personal Products",
   "longName": "Hindustan Unilever Limited",
-  "previousClose": 2009.9,
+  "previousClose": 2019.1,
   "sector": "Consumer Defensive",
   "sharesOutstanding": 2349591262,
   "trailingEps": 45.04

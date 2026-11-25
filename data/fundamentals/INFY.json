@@ -584,7 +584,7 @@
    "Taxes Refund Paid": -973000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:13Z",
+ "fetched_utc": "2026-11-25T21:55:31Z",
  "income": {
   "2022-03-31": {
    "Rent And Landing Fees": 6000000.0,
@@ -807,11 +807,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1108.8,
+  "currentPrice": 1130.0,
   "financialCurrency": "USD",
   "industry": "Information Technology Services",
   "longName": "Infosys Limited",
-  "previousClose": 1130.0,
+  "previousClose": 1103.4,
   "sector": "Technology",
   "sharesOutstanding": 4050376561,
   "trailingEps": 75.1
@@ -849,7 +849,6 @@
    "Current Debt And Capital Lease Obligation": 312000000.0,
    "Current Deferred Assets": 108000000.0,
    "Current Deferred Liabilities": 1016000000.0,
-   "Current Deferred Revenue": 1016000000.0,
    "Current Liabilities": 5224000000.0,
    "Current Provisions": 184000000.0,
    "Defined Pension Benefit": 30000000.0,
@@ -938,7 +937,6 @@
    "Current Debt And Capital Lease Obligation": 332000000.0,
    "Current Deferred Assets": 107000000.0,
    "Current Deferred Liabilities": 1235000000.0,
-   "Current Deferred Revenue": 1235000000.0,
    "Current Liabilities": 5555000000.0,
    "Current Provisions": 195000000.0,
    "Defined Pension Benefit": 1000000.0,
@@ -1027,7 +1025,6 @@
    "Current Debt And Capital Lease Obligation": 333000000.0,
    "Current Deferred Assets": 100000000.0,
    "Current Deferred Liabilities": 1248000000.0,
-   "Current Deferred Revenue": 1248000000.0,
    "Current Liabilities": 5516000000.0,
    "Current Provisions": 159000000.0,
    "Defined Pension Benefit": 21000000.0,

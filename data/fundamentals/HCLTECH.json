@@ -573,7 +573,7 @@
    "Taxes Refund Paid": -40760000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:15Z",
+ "fetched_utc": "2026-11-25T21:55:33Z",
  "income": {
   "2022-03-31": {
    "Research And Development": 205000000.0,
@@ -782,11 +782,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 1344.7,
+  "currentPrice": 1380.0,
   "financialCurrency": "USD",
   "industry": "Information Technology Services",
   "longName": "HCL Technologies Limited",
-  "previousClose": 1355.7,
+  "previousClose": 1364.3,
   "sector": "Technology",
   "sharesOutstanding": 2706625485,
   "trailingEps": 67.59

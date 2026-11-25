@@ -526,7 +526,7 @@
    "Taxes Refund Paid": -13584900000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:43Z",
+ "fetched_utc": "2026-11-25T21:56:06Z",
  "income": {
   "2022-03-31": {
    "Rent And Landing Fees": 281100000.0,
@@ -745,11 +745,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 7700.0,
+  "currentPrice": 8336.0,
   "financialCurrency": "INR",
   "industry": "Auto Manufacturers",
   "longName": "Eicher Motors Limited",
-  "previousClose": 7828.0,
+  "previousClose": 8172.5,
   "sector": "Consumer Cyclical",
   "sharesOutstanding": 274547616,
   "trailingEps": 217.45
@@ -941,7 +941,6 @@
    "Other Equity Interest": 1582300000.0,
    "Other Intangible Assets": 17082000000.0,
    "Other Inventories": 147000000.0,
-   "Other Non Current Assets": 3362200000.0,
    "Other Non Current Liabilities": 6044200000.0,
    "Other Payable": 4919700000.0,
    "Other Properties": 26767200000.0,

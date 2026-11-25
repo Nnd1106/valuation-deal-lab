@@ -523,7 +523,7 @@
    "Taxes Refund Paid": -143840000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:11Z",
+ "fetched_utc": "2026-11-25T21:55:29Z",
  "income": {
   "2023-03-31": {
    "Basic Average Shares": 3659051373.0,
@@ -726,13 +726,13 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 2379.5,
+  "currentPrice": 2517.3,
   "financialCurrency": "INR",
   "industry": "Information Technology Services",
   "longName": "Tata Consultancy Services Limited",
-  "previousClose": 2406.6,
+  "previousClose": 2460.0,
   "sector": "Technology",
-  "sharesOutstanding": 3618087518,
+  "sharesOutstanding": null,
   "trailingEps": 142.66
  },
  "q_balance": {

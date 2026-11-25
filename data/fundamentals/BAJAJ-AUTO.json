@@ -560,7 +560,7 @@
    "Taxes Refund Paid": -34295400000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:41Z",
+ "fetched_utc": "2026-11-25T21:56:04Z",
  "income": {
   "2023-03-31": {
    "Amortization": 303500000.0,
@@ -780,13 +780,13 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 10570.0,
+  "currentPrice": 10868.0,
   "financialCurrency": "INR",
   "industry": "Auto Manufacturers",
   "longName": "Bajaj Auto Limited",
-  "previousClose": 10770.0,
+  "previousClose": 10643.0,
   "sector": "Consumer Cyclical",
-  "sharesOutstanding": 274577733,
+  "sharesOutstanding": 274803838,
   "trailingEps": 468.8
  },
  "q_balance": {

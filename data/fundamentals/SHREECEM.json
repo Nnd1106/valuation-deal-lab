@@ -541,7 +541,7 @@
    "Taxes Refund Paid": -3460000000.0
   }
  },
- "fetched_utc": "2026-11-18T20:49:48Z",
+ "fetched_utc": "2026-11-25T21:56:12Z",
  "income": {
   "2023-03-31": {
    "Basic Average Shares": 36080748.0,
@@ -750,11 +750,11 @@
  },
  "info": {
   "currency": "INR",
-  "currentPrice": 24835.0,
+  "currentPrice": 25245.0,
   "financialCurrency": "INR",
   "industry": "Building Materials",
   "longName": "Shree Cement Limited",
-  "previousClose": 24900.0,
+  "previousClose": 25150.0,
   "sector": "Basic Materials",
   "sharesOutstanding": 36080748,
   "trailingEps": 438.84
